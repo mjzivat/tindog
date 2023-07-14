@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box; 
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    width: 550px;
+    background: linear-gradient(180deg, #FFF 0%, #F7F8FC 100%);
+    /* border: 2px red solid; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 18px;
+}
+
+.header-icons {
+    width: 34px;
+    height: 34px;
+}
+
+.logo-img {
+    width: 84px;
+}
+
+.dog-profile {
+    display: grid;
+    grid-template: 1fr / 1.5% 97% 1.5%;    
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1;
+    grid-column: 2;
+    border-radius: 15px;
+}
+
+.dog-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 0;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 16px 12px;
+    align-self: end;
+}
+
+.name-age {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F8F8F8;
+}
+
+.bio-text {
+    font-size: 1.5rem;
+    color: #B7B7B7;
+}
+
+.badge {
+    width: 172.319px;
+    height: 89.966px;
+    transform: rotate(-30deg);
+    grid-row: 1;
+    grid-column: 2;
+    margin: 40px 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.actions {
+    display: flex;
+    padding: 25px ;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-icons {
+    /* padding: 10px; */
+    width: 91.9px;
+    height: 91.9px;
+    background-color: #fff;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0px 10px 20px 0px #E9E9EA;
+}
+
+.cross:hover {
+    background-color: #FFE7EF;
+    filter: drop-shadow(0px 10px 20px #EDD9DF);
+}
+
+.heart:hover {
+    background-color: #DBFFF4;
+    filter: drop-shadow(0px 10px 20px #CCF1E6);
+}
+
+.container {
+    text-align: center;
+}
+
+.no-dogs {
+    font-size: 3rem;
+    font-weight: 600;
+}
